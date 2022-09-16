@@ -8,12 +8,17 @@
   /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
-
+div {
+  border: 1px solid red;   /* не забыть удалить */
+}
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+/* выше установили ограничения для секции */
+  position: relative;
+  display: flex;
+  border: 1px solid red;   /* не забыть удалить */
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -28,4 +33,27 @@
   color: white;
   margin-right: 0;
   margin-top: 80px;
+}
+
+.logo {
+  background-image: url('../images/logo_place_header.svg');
+  background-size: cover;
+  width: 228px;
+  height: 32px;
+}
+
+.logo_place_holder {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.header__title {
+  width: 730px;
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
