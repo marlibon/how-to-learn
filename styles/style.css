@@ -11,11 +11,16 @@
 div, img, a {
   border: 1px solid red;   /* не забыть удалить */
 }
+ul, li, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;}
 .header {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
   background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 /* выше установили ограничения для секции */
   position: relative;
   display: flex;
@@ -58,6 +63,7 @@ div, img, a {
   flex-direction: column;
   justify-content: center;
   margin-left: 64px;
+  z-index: 2;
 }
 .header__subtitle {
   position: absolute;
@@ -67,6 +73,7 @@ div, img, a {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  z-index: 2;
 }
 .header__link {
   color: #2f80ed;
@@ -80,11 +87,191 @@ div, img, a {
   z-index: 1;
 }
 .header__square-pic{
-background-color: #2f80ed;
-width: 568px;
-height: 568px;
-position: absolute;
-right: 0;
-top: 64px;
-z-index: 0;
+  background-color: #2f80ed;
+  width: 568px;
+  height: 568px;
+  position: absolute;
+  right: 0;
+  top: 64px;
+  z-index: 0;
+}
+
+.description {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.two-columns {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.indent_mt_100 {
+  margin-top: 100px;
+}
+
+.indent_mb_100 {
+  margin-bottom: 100px;
+}
+
+.two-columns__brief {
+  width: 175px;
+  color: #2f80ed;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0px;
+  padding: 0;
+}
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+}
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.two-columns__span-accent {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: 600;
+}
+.indent_mt_30 {
+  margin-top: 30px;
+}
+.indent_mb_20 {
+  margin-bottom: 20px;
+}
+.digits {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.section-title {
+  width: 60%;
+  text-align: center;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+.section-subtitle {
+  width: 60%;
+  text-align: center;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  ;
+}
+.table {
+  width: 1100px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border: 1px solid green;   /* не забыть удалить */
+
+}
+.table__cell {
+  width: 250px;
+  border: 1px solid green;  /* не забыть удалить */
+  margin-top: 60px;
+  padding: 0;
+
+
+}
+.table__heading {
+  margin-bottom: 20px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+.table__text {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+.feynman {
+  height: 890px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  background-image: url('../images/feynman.png');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  position: relative;
+}
+.feynman__title {
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.feynman__subtitle {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+
+}
+.indent_mb_70 {
+  margin-bottom: 70px;
+}
+
+.feynman__link {
+  color: #2f80ed;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+.kaufman {
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  position: relative;
+  overflow: hidden;
+}
+.indent_mt_90 {
+  margin-top: 90px;
+}
+
+.indent_mb_90 {
+  margin-bottom: 90px;
+}
+
+.table__cell_theme_dark {
+  width: 200px;
+  margin-top: 80px;
+}
+.theme_dark {
+  color: #fff;
+  z-index: 2;
+}
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  background-image: url('../images/kaufman-triangle.svg');
+  position: absolute;
+  top: 0;
+  right: -210px;
+
 }
