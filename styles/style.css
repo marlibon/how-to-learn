@@ -9,7 +9,7 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-ul, li, h1, h2, h3, h4 {
+ul, li, h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
 }
@@ -239,7 +239,7 @@ ul, li, h1, h2, h3, h4 {
   text-decoration: none;
 }
 .kaufman {
-  background-color: #000;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -274,7 +274,7 @@ ul, li, h1, h2, h3, h4 {
   right: -210px;
 }
 .footer {
-  background-color: #000;
+  background-color: #1f1f1f;
   min-height: 350px;
   display: flex;
   flex-direction: column;
