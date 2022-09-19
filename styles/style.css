@@ -9,10 +9,6 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-ul, ol, li, h1, h2, h3, h4, p {
-  margin: 0;
-  padding: 0;
-}
 .header {
   height: 100vh;
   min-height: 600px;
@@ -20,7 +16,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   background-color: #f2f2f2;
   margin: 0;
   padding: 0;
-/* выше установили ограничения для секции */
+  /* выше установили ограничения для секции */
   position: relative;
   display: flex;
 }
@@ -61,6 +57,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   padding: 0;
   z-index: 2;
 }
+
 .header__subtitle {
   position: absolute;
   left: 64px;
@@ -73,10 +70,12 @@ ul, ol, li, h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
 }
+
 .header__link {
   color: #2f80ed;
   text-decoration: none;
 }
+
 .header__main-illustration {
   width: 765px;
   height: 608px;
@@ -93,6 +92,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   justify-content: center;
   padding-top: 100px;
 }
+
 .two-columns {
   margin: 0;
   padding: 0;
@@ -111,10 +111,12 @@ ul, ol, li, h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
 }
+
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
 }
+
 .two-columns__paragraph {
   line-height: 34px;
   font-size: 24px;
@@ -123,9 +125,10 @@ ul, ol, li, h1, h2, h3, h4, p {
   padding: 0;
 }
 
-.two-columns__paragraph:last-child{
+.two-columns__paragraph:last-child {
   margin-bottom: 0;
 }
+
 .two-columns__span-accent {
   line-height: 34px;
   font-size: 24px;
@@ -152,6 +155,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   font-weight: 600;
   z-index: 2;
 }
+
 .section-subtitle {
   max-width: 60%;
   text-align: center;
@@ -162,6 +166,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   padding: 0;
   z-index: 2;
 }
+
 .table {
   margin: 0;
   padding: 0;
@@ -173,13 +178,13 @@ ul, ol, li, h1, h2, h3, h4, p {
   justify-content: space-between;
 
 }
+
 .table__cell {
   max-width: 250px;
   margin: 60px 0 0 0;
   padding: 0;
-
-
 }
+
 .table__heading {
   margin: 0 0 20px 0;
   padding: 0;
@@ -187,6 +192,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   font-size: 24px;
   font-weight: 600;
 }
+
 .table__text {
   line-height: 1.2;
   font-size: 18px;
@@ -194,10 +200,11 @@ ul, ol, li, h1, h2, h3, h4, p {
   margin: 0 0 20px 0;
   padding: 0;
 }
+
 .table__text:last-child {
   margin-bottom: 0px;
-
 }
+
 .feynman {
   min-height: 890px;
   display: flex;
@@ -212,6 +219,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   position: relative;
   padding-top: 100px;
 }
+
 .feynman__title {
   margin: 0;
   padding: 0;
@@ -220,7 +228,6 @@ ul, ol, li, h1, h2, h3, h4, p {
   font-size: 120px;
   font-weight: 600;
   text-align: center;
-
 }
 
 .feynman__subtitle {
@@ -228,7 +235,6 @@ ul, ol, li, h1, h2, h3, h4, p {
   font-size: 36px;
   font-weight: normal;
   margin: 70px 0 0 0;
-
 }
 
 .feynman__link {
@@ -241,6 +247,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   font-weight: normal;
   text-decoration: none;
 }
+
 .kaufman {
   background-color: #1f1f1f;
   display: flex;
@@ -258,10 +265,12 @@ ul, ol, li, h1, h2, h3, h4, p {
   color: #fff;
   z-index: 2;
 }
+
 .section-subtitle_theme_dark {
   color: #fff;
   z-index: 2;
 }
+
 .table__cell_theme_dark {
   max-width: 200px;
   color: white;
@@ -269,10 +278,12 @@ ul, ol, li, h1, h2, h3, h4, p {
   margin-top: 80px;
   z-index: 2;
 }
+
 .table__heading_theme_dark {
   color: #fff;
   z-index: 2;
 }
+
 .table__text_theme_dark {
   color: #fff;
   z-index: 2;
@@ -287,6 +298,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   top: 0;
   right: -210px;
 }
+
 .footer {
   background-color: #1f1f1f;
   min-height: 350px;
@@ -297,6 +309,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   color: #fff;
   padding: 60px 0 40px 0;
 }
+
 .footer__columns {
   display: flex;
   flex-direction: row;
@@ -310,20 +323,24 @@ ul, ol, li, h1, h2, h3, h4, p {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .footer__column_content_copyright {
   justify-content: space-between;
   flex-basis: 711px;
 }
+
 .logo_place_footer {
   background-image: url('../images/logo_place_footer.svg');
   background-size: contain;
 }
+
 .footer__author {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   margin: 18px 0 18px 0;
 }
+
 .footer__column-heading {
   margin: 0;
   padding: 0;
@@ -341,6 +358,7 @@ ul, ol, li, h1, h2, h3, h4, p {
   margin: 20px 0 16px 0;
   list-style-type: none;
 }
+
 .footer__column-link {
   color: #fff;
   text-decoration: none;
@@ -354,4 +372,3 @@ ul, ol, li, h1, h2, h3, h4, p {
   height: 16px;
   padding-right: 10px;
 }
-
