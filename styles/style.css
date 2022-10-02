@@ -1,3 +1,11 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+    }
+    to {
+    transform: rotate(360deg);
+    }
+}
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -23,6 +31,7 @@
   justify-content: flex-start;
   align-items: center;
   /* выше код для правильного позиционирования дочерних элементов */
+  overflow: hidden;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -76,7 +85,10 @@
   color: #2f80ed;
   text-decoration: none;
 }
-
+.header__link:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
 .header__main-illustration {
   width: 765px;
   height: 608px;
@@ -86,7 +98,58 @@
   right: 0;
   z-index: 1;
 }
+.techniques {
+  padding-top: 100px;
+  width: 80%;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+.cards {
+  width: 920px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cards__item {
+  margin: 0 100px 60px 0;
+  flex-basis: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cards__item:nth-child(3) {
+  margin: 0 0 60px 0;
+}
+.cards__image {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  padding: 60px 40px 43px 40px;
+}
+.cards__title {
+  margin: 0;
+  padding: 0;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 16px;
+  text-align: center;
+}
+.cards__description {
+  margin: 0;
+  padding: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
 
+}
 .description {
   display: flex;
   flex-direction: row;
@@ -249,7 +312,10 @@
   font-weight: normal;
   text-decoration: none;
 }
-
+.feynman__link:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
 .kaufman {
   background-color: #1f1f1f;
   display: flex;
@@ -368,9 +434,15 @@
   font-size: 18px;
   font-weight: normal;
 }
-
+.footer__column-link:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
 .footer__social-icon {
   width: 16px;
   height: 16px;
   padding-right: 10px;
+}
+.rotation {
+  animation: rotation 20s linear infinite;
 }
