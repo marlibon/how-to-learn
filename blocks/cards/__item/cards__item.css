@@ -6,3 +6,6 @@
   justify-content: flex-start;
   align-items: center;
 }
+.cards__item:nth-child(3) {
+  margin-right: 0;
+}

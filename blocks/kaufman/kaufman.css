@@ -1,3 +1,5 @@
+@import url(./__triangle/kaufman__triangle.css);
+
 .kaufman {
   background-color: #1f1f1f;
   display: flex;

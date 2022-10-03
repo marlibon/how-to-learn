@@ -1,4 +1,5 @@
 {
     "ecsstractor_port.brackets_newline_after": true,
-    "ecsstractor_port.comment_style": "css"
+    "ecsstractor_port.comment_style": "css",
+    "liveServer.settings.port": 5501
 }
