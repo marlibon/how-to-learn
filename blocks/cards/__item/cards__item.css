@@ -1,0 +1,8 @@
+.cards__item {
+  margin-right: 100px;
+  flex-basis: 240px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}

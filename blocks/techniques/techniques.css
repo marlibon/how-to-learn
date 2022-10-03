@@ -1,0 +1,11 @@
+.techniques {
+  padding-top: 100px;
+  width: 80%;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}

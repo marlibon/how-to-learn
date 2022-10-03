@@ -1,0 +1,6 @@
+.logo {
+  background-image: url('../images/logo_place_header.svg');
+  background-size: cover;
+  width: 228px;
+  height: 32px;
+}
