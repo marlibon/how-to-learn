@@ -224,6 +224,8 @@
   padding-top: 160px;
   display: flex;
   justify-content: center;
+  background-color: #f2f2f2;
+
 }
 .digits {
   display: flex;
@@ -256,7 +258,79 @@
   padding: 0;
   z-index: 2;
 }
-
+.khan {
+  background-color: #f2f2f2;
+  padding-top: 105px;
+}
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.khan__author {
+  margin: 0;
+  padding: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.khan__title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+.khan__quote {
+  margin: 0;
+  padding: 0;
+  width: 790px;
+  margin-bottom: 36px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.khan__quote-author {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+.khan__quote-author-subline {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 68px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+.khan__book-container {
+  display: flex;
+}
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  background-size: cover;
+  background-image: url(../images/khan-book.jpg);
+  margin-right: 48px;
+}
+.khan__buy-link {
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+.khan__buy-link:hover {
+  color: #2f80ed;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
 .table {
   margin: 0;
   padding: 0;
@@ -392,7 +466,30 @@
   top: 0;
   right: -210px;
 }
+.resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 217px;
+}
 
+.resources__logo-zone {
+  width: 1100px;
+  margin-top: 80px;
+  display: flex;
+
+}
+.resources__link {
+  width: 270px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+}
+.resources__link:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
 .footer {
   background-color: #1f1f1f;
   min-height: 350px;
