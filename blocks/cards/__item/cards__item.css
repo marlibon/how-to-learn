@@ -1,4 +1,6 @@
 .cards__item {
+  margin: 0;
+  padding: 0;
   margin-right: 100px;
   flex-basis: 240px;
   display: flex;

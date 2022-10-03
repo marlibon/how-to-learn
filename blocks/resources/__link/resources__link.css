@@ -3,6 +3,7 @@
   height: 38px;
   display: flex;
   justify-content: center;
+  transition: opacity 0.2s ease;
 }
 .resources__link:hover {
   opacity: 0.5;
