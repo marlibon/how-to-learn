@@ -1,8 +1,8 @@
 .resources__link {
   width: 270px;
   height: 38px;
-  display: flex;
-  justify-content: center;
+  display: block;
+  background-color: transparent;
   transition: opacity 0.2s ease;
 }
 .resources__link:hover {

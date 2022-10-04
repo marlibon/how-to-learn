@@ -1,3 +1,5 @@
 .resources__logo {
-
+  width: inherit;
+  height: inherit;
+  object-fit: contain;
 }
